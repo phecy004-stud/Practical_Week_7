@@ -37,3 +37,14 @@ Vector3D Vector3D::operator+(const Vector3D& other) const { // Add two vectors
 	// Create a new vector that is the sum of this vector and the other vector
 	return Vector3D(x_ + other.x_, y_ + other.y_, z_ + other.z_);
 }
+
+// Distance function
+float Vector3D::distanceTo(const Vector3D& other) const {
+
+	// Calculate the distance between this vector and another vector
+	float dx = x_ - other.x_; // Difference in x-coordinates
+	float dy = y_ - other.y_;
+	float dz = z_ - other.z_;
+
+	return std::sqrt(dx * dx + dy * dy + dz * dz); // use the Pythagorean theorem to calculate the distance
+}
