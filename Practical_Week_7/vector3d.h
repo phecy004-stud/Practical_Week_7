@@ -27,4 +27,7 @@ public:
 
     // Distance function
     float distanceTo(const Vector3D& other) const;
+
+    // Delete assignment operator to make class immutable
+    Vector3D &operator =(const Vector3D& other) = delete;
 };

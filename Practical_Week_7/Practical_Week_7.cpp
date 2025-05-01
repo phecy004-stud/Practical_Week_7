@@ -28,7 +28,7 @@ int main()
     cout << endl;
     Vector3D v4{ 1,7,6 };
     // test your code with the below line uncommented, if it builds, your Vector3D is incorrect
-    //  v3 = v4 + v1;
+    //v3 = v4 + v1;
     cout << "Vector3D v4 = ";
     printVector(v4);
     cout << endl;
